@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    <script>
+        let myobj={
+    name:"Ajay",
+    LastName:"Morde",
+    age:24,
+    Degree:"B-Tech"
+}
+
+localStorage.setItem("myobj",myobj)
+console.log(localStorage)
+let myo=JSON.stringify(myobj);
+console.log(myo)
+localStorage.setItem("myobj",myo)
+
+let myobject=JSON.parse(localStorage.getItem("myobj"));
+console.log(myobject)
+
+    </script>
+</body>
+</html>
